@@ -26,9 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">Build Your Team!</header>
-      <TeamMateCard addTeamMate={addTeamMate} />
-      <TeamCard teamCard={teamCard} />     
+      <header className="header">Build Your Team!</header>
+      <div className="inputForm"><TeamMateCard addTeamMate={addTeamMate} /></div>
+      <div className="teamCards"><TeamCard teamCard={teamCard} /></div>        
     </div>
   );
 }

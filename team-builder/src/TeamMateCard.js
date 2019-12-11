@@ -16,8 +16,9 @@ const TeamMateCard = ({ addTeamMate }) => {
 
     return (
         <form onSubmit={submitForm}>
+        <div className="enterName">
             <label htmlFor="teamMate">Team Mate's Name: </label>
-            <input
+            <textarea
             id="teamMate"
             type="text"
             name="teamMate"
@@ -25,6 +26,8 @@ const TeamMateCard = ({ addTeamMate }) => {
             onChange={updateInfo}
             value={card.teamMate}
             />
+            </div>
+        <div className="enterEmail">
             <label htmlFor="email">Email: </label>
             <textarea
             id="email"
@@ -33,6 +36,8 @@ const TeamMateCard = ({ addTeamMate }) => {
             onChange={updateInfo}
             value={card.email}
             />
+            </div>
+        <div className="enterRole">
             <label htmlFor="role">Project Role: </label>
             <textarea
             id="role"
@@ -41,7 +46,10 @@ const TeamMateCard = ({ addTeamMate }) => {
             onChange={updateInfo}
             value={card.role}
             />
+            </div>
+        <div className="theButton">
             <button type="submit">Add Team Mate!</button>
+            </div>
         </form>
     );
 };

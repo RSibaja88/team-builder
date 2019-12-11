@@ -7,7 +7,8 @@ const TeamCard = props => {
             {props.teamCard.map(teamCard => (
                 <div className="teamCard" key={teamCard.id}>
                 <h2>{teamCard.teamMate}</h2>
-                <p>{teamCard.study}</p>
+                <p>{teamCard.email}</p>
+                <p>{teamCard.role}</p>
                 </div>
             ))}
         </div>
